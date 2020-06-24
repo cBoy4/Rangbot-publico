@@ -11,7 +11,7 @@ var prefix = config.prefix;
 
 bot.on('ready', () => {
   console.log('ITS WORKS');
-  bot.user.setActivity(`Politicamente Incorrecto`);
+  bot.user.setActivity(`Siendo Politicamente Incorrecto`);
 });
 
 
@@ -57,7 +57,7 @@ bot.on("message", message=> {
 
 
 
-///////////////////////////      MADRE        //////////////////////////////////////////////
+///////////////////////////      GLADIO        //////////////////////////////////////////////
 bot.on("message", message=> {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
@@ -140,7 +140,7 @@ bot.on("message", message => {
      const args = message.content.slice(prefix.length).trim().split(/ +/g);
      const command = args.shift().toLowerCase();
     if (command === "luigi") {
-    message.reply("POLLA");
+    message.reply("POIA");
   }
 });
 
@@ -501,6 +501,18 @@ if (command === "amigos") {
 }
       });
 
+
+
+
+///////////////////////////      borra eso      //////////////////////////////////////////////
+bot.on("message", message=> {
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+    if (command === "borra") {
+    let borrador = message.author
+    message.reply( "{borrador} ha borrado eso:borraeso:725369429893841026" );
+  }
+});
 
   
 
